@@ -1,4 +1,9 @@
-
+<h1> My  Heros </h1>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <span class="badge"> {{ hero.id }} </span>{{ hero.name }}
+  </li>
+</ul>
 <p>{{ hero.name | uppercase }} Details</p>
 <div>id: {{ hero.id }}</div>
 <div>name: {{ hero.name }}</div>
